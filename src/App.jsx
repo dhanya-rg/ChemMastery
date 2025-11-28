@@ -81,7 +81,7 @@ function App() {
             </nav>
 
             {/* Main Content */}
-            <main className="pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <main className="pt-20 md:pt-24 pb-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
                 <AnimatePresence mode="wait">
                     {activeTab === 'balancer' ? (
                         <motion.div
@@ -114,8 +114,8 @@ const NavButton = ({ children, active, onClick, icon }) => (
     <button
         onClick={onClick}
         className={`flex items-center gap-2 px-4 py-2 rounded-lg transition-all duration-200 ${active
-                ? 'bg-primary/20 text-primary border border-primary/20 shadow-[0_0_15px_rgba(59,130,246,0.2)]'
-                : 'text-muted hover:text-white hover:bg-white/5'
+            ? 'bg-primary/20 text-primary border border-primary/20 shadow-[0_0_15px_rgba(59,130,246,0.2)]'
+            : 'text-muted hover:text-white hover:bg-white/5'
             }`}
     >
         {icon}
@@ -127,8 +127,8 @@ const MobileNavButton = ({ children, active, onClick }) => (
     <button
         onClick={onClick}
         className={`block w-full text-left px-3 py-2 rounded-md text-base font-medium ${active
-                ? 'bg-primary/20 text-primary'
-                : 'text-muted hover:text-white hover:bg-white/5'
+            ? 'bg-primary/20 text-primary'
+            : 'text-muted hover:text-white hover:bg-white/5'
             }`}
     >
         {children}

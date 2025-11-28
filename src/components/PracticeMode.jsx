@@ -124,7 +124,7 @@ const PracticeMode = () => {
             </div>
 
             {/* Problem Area */}
-            <div className="glass-panel p-8 rounded-2xl space-y-8">
+            <div className="glass-panel p-4 md:p-8 rounded-2xl space-y-8">
                 <div className="flex justify-between items-center">
                     <span className={`px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wider ${currentProblem.difficulty === 'Easy' ? 'bg-success/20 text-success' :
                         currentProblem.difficulty === 'Medium' ? 'bg-warning/20 text-yellow-500' :
@@ -140,7 +140,7 @@ const PracticeMode = () => {
                     </button>
                 </div>
 
-                <div className="flex flex-wrap items-center justify-center gap-4 text-xl md:text-2xl font-mono">
+                <div className="flex flex-wrap items-center justify-center gap-2 md:gap-4 text-lg md:text-2xl font-mono">
                     {/* Reactants */}
                     {reactants.map((r, i) => (
                         <React.Fragment key={`r-${i}`}>

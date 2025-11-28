@@ -37,7 +37,7 @@ const Balancer = () => {
     return (
         <div className="max-w-3xl mx-auto space-y-8">
             <div className="text-center space-y-4">
-                <h2 className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
+                <h2 className="text-2xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent">
                     Equation Balancer
                 </h2>
                 <p className="text-muted text-lg">
@@ -45,7 +45,7 @@ const Balancer = () => {
                 </p>
             </div>
 
-            <div className="glass-panel p-8 rounded-2xl space-y-6">
+            <div className="glass-panel p-4 md:p-8 rounded-2xl space-y-6">
                 <div className="space-y-2">
                     <label className="text-sm font-medium text-muted">Chemical Equation</label>
                     <div className="relative">
@@ -98,7 +98,7 @@ const Balancer = () => {
                                 <CheckCircle2 className="w-6 h-6" />
                                 <span className="font-bold">Balanced Successfully</span>
                             </div>
-                            <div className="text-3xl font-mono font-bold text-white tracking-wide break-words">
+                            <div className="text-xl md:text-3xl font-mono font-bold text-white tracking-wide break-words">
                                 {result.balanced.split('->').map((part, i) => (
                                     <span key={i}>
                                         {i > 0 && <span className="text-muted mx-2">→</span>}
